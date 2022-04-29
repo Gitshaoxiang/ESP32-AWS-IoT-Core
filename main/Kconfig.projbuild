@@ -1,0 +1,24 @@
+menu "AWS IoT Core Configuration"
+
+    config WIFI_SSID
+        string "WiFi SSID"
+        default "ssid"
+        help
+            SSID (network name) for the example to connect to.
+
+    config WIFI_PASSWORD
+        string "WiFi Password"
+        default "password"
+        help
+            WiFi password (WPA or WPA2) for the example to use.
+            Can be left blank if the network has no security set.
+
+    config AWS_HOST_ADDRESS
+        string "AWS HOST ADDR"
+        default "xxxxxxxxxxxxxx.amazonaws.com"
+
+    config AWS_THING_NAME
+        string "AWS THING NAME"
+        default "thing name"
+
+endmenu
